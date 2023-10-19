@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Darshan</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/banner10.JPG" alt="New York" width="100%" height="700">
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3 style="font-family: fantasy">Contact Us</h3>
+        <div class="row">
+            <div class="col-sm-2">
+                <p align="justify"></p>
+                <img src="images/home-content-bg.png" class="img-responsive" style="width:auto;height:150px;margin: 0 auto;" alt="Image">
+            </div>
+            <div class="col-sm-8">
+                <p>SRI SRI SRI AADHISHAKTHI NAGADEVI AALAYAM WOODYARD STREET, TOWN KOTHA ROAD,Visakhapatnam, Andhra Pradesh, India 530001 Contact Number:+91 8885522111 , 9553999939 </p>
+                <div id="map" align="center" style="width:100%;height:400px;"></div>
+
+                <script>
+                    function myMap() {
+
+
+                        var myLatLng = {
+                            lat: 17.703531,
+                            lng: 83.297071
+                        };
+
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 15,
+                            center: myLatLng,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        });
+
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Hello World!'
+                        });
+                    }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&callback=myMap"></script>
+            </div>
+            <div class="col-sm-2">
+                <p align="justify"></p>
+                <img src="images/home-content-bg.png" class="img-responsive" style="width:auto;height:150px;margin: 0 auto;" alt="Image">
+            </div>
+        </div>
+
+    </div><br>
+
+
+
+    <div class="footer" align="center">
+        <div class="gopuram">
+            <img src="images/gopuram2.png">
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <div class=" copyright ">
+            © 2018 Sri Sri Sri Aadhi Shakthi Nagadevi
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
